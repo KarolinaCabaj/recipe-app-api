@@ -1,0 +1,14 @@
+[tool.black]
+line-length = 120
+target-version = ["py37"]
+force-exclude = """
+/(
+  | .venv
+  | .+/migrations
+)/
+"""
+[tool.isort]
+profile = "black"
+known_first_party = ["app/"]
+sections = ["FUTURE", "STDLIB", "THIRDPARTY", "FIRSTPARTY", "LOCALFOLDER"]
+skip_glob = ["*/migrations/*", ".venv", "__pycache__"]

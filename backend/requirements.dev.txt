@@ -1,0 +1,5 @@
+black~=22.6.0
+isort~=5.8.0
+flake8~=5.0.0
+autoflake~=1.4
+pre-commit~=2.12.1
