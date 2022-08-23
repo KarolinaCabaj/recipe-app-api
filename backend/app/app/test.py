@@ -7,7 +7,6 @@ from app import calc
 
 
 class CalcTest(SimpleTestCase):
-
     def test_add_number(self):
         res = calc.add(5, 6)
 
